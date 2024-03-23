@@ -53,16 +53,6 @@ else
 	Orion.Parent = gethui() or game.CoreGui
 end
 
-print("THIS??")
-function OrionLib:IsRunning()
-	if gethui then
-		return Orion.Parent == gethui()
-	else
-		return Orion.Parent == game:GetService("CoreGui")
-	end
-
-end
-print("THIS?? 2")
 local function AddConnection(Signal, Function)
 	if (not OrionLib:IsRunning()) then
 		return
